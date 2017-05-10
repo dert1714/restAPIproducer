@@ -17,7 +17,7 @@ public class Receiver {
     private static Map<String,String> defaultTags = new HashMap<>();
     static{
         defaultTags.put("region", "Saratov");
-        defaultTags.put("Hbar", "100");
+        //defaultTags.put("Hbar", "100");
     }
 
     private CountDownLatch latch = new CountDownLatch(1);
@@ -31,7 +31,7 @@ public class Receiver {
         StringBuilder s = new StringBuilder();
         for(Map.Entry<String, String> m : map.entrySet()){
             s.append(",");
-            s.append(" ");
+//            s.append(" ");
             s.append(m.getKey());
             s.append("=");
             s.append(m.getValue());
